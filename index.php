@@ -8,6 +8,9 @@ $database = mysqli_connect("localhost", "root", "", "db_pemesanan_lapangan");
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplikasi Pemesanan Lapangan</title>
+    <style>
+        background-image: url(/image/background.jpeg);
+    </style>
   </head>
   <body>
     <nav>
@@ -16,6 +19,7 @@ $database = mysqli_connect("localhost", "root", "", "db_pemesanan_lapangan");
       <a href="about">About</a>
     </nav>
     <h1>WELCOME TO GOR SAKA SPORTS</h1>
+    
   </body>
 </html>
 </html>
