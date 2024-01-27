@@ -65,11 +65,11 @@ $database = mysqli_connect("localhost", "root", "", "db_pemesanan_lapangan");
     </style>
   </head>
   <body>
-    <nav>
-      <a href="home">Home</a>
-      <a href="pemesanan">Pemesanan</a>
-      <a href="about">About</a>
-    </nav>
+  <nav>
+    <a href="index.php">Home</a>
+    <a href="pemesanan.php">Pemesanan</a>
+    <a href="about.php">About</a>
+</nav>
     <h1>WELCOME TO GOR SAKA SPORTS</h1>
     
   </body>
