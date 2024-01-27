@@ -1,3 +1,7 @@
+<?php
+$database = mysqli_connect("localhost", "root", "", "db_pemesanan_lapangan");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
