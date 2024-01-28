@@ -28,21 +28,19 @@
     <table border="1" cellpadding="10" cellspacing="0">
    
     <tr>
-        <th>jam</th>
-        <th>senin</th>
-        <th>selasa</th>
-        <th>rabu</th>
-        <th>kamis</th>
-        <th>jumat</th>
-        <th>sabtu</th>
-        <th>minggu</th>
+        <th>Jam</th>
+        <th>Senin</th>
+        <th>Selasa</th>
+        <th>Rabu</th>
+        <th>Kamis</th>
+        <th>Jumat</th>
+        <th>Sabtu</th>
+        <th>Minggu</th>
+        <th>Aksi</th>
     </tr>
         
         <?php foreach( $pemesanan as $row ) : ?>
     <tr>
-        <td>
-            <a href="">Ubah</a>
-            <a href="">Hapus</a>
         </td>
         <td><?= $row["Jam"]; ?></td>
         <td><?= $row["Senin"]; ?></td>
@@ -52,6 +50,9 @@
         <td><?= $row["Jumat"]; ?></td>
         <td><?= $row["Sabtu"]; ?></td>
         <td><?= $row["Minggu"]; ?></td>
+        <td>
+            <a href="">Ubah</a>
+            <a href="">Hapus</a>
     </tr>
     <?php endforeach; ?>
 
