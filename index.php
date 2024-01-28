@@ -12,6 +12,7 @@
     <a href="index.php">Home</a>
     <a href="pemesanan.php">Pemesanan</a>
     <a href="about.php">About</a>
+    <a href="login.php">Login</a>
 </nav>
     <h1>WELCOME TO GOR SAKA SPORTS</h1>
     

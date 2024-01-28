@@ -53,6 +53,12 @@
             <?php endforeach; ?>
             
         </table>
-    
+        <footer>
+    <h1>Kontak Kami</h1>
+    <h3>Wa</h3>
+    <p>08776372809</p>
+    <h3>Ig</h3>
+    <p>@saka_kuy</p>
+</footer>
 </body>
 </html>

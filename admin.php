@@ -32,10 +32,8 @@
 </head>
 <body>
 <nav>
-    <a href="index.php">Home</a>
-    <a href="pemesanan.php">Pemesanan</a>
-    <a href="about.php">About</a>
-    <a href="pemesanan.php">Log Out</a>
+    <a href="admin.php">Home</a>
+    <a href="index.php">Log Out</a>
 </nav>
 
 <h1>Selamat Datang Admin Tercintahhh</h1>
