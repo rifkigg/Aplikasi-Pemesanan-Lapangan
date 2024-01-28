@@ -33,6 +33,7 @@ if (isset($_POST["submit"])) {
                 <input type="text" name="nama" id="nama" required>
             </li>
             <li>
+                <label for="hari">Hari :</label>
                 <select name="hari" id="hari" required>
                     <option value="senin">Senin</option>
                     <option value="selasa">Selasa</option>
@@ -44,7 +45,8 @@ if (isset($_POST["submit"])) {
                 </select>
             </li>
             <li>
-                <select name="jam" id="jam" required        >
+                <label for="jam">Jam :</label>
+                <select name="jam" id="jam" required>
                     <option value="01-02">Jam 01.00 Sampai Jam 02.00</option>
                     <option value="02-03">Jam 02.00 Sampai Jam 03.00</option>
                     <option value="03-04">Jam 03.00 Sampai Jam 04.00</option>

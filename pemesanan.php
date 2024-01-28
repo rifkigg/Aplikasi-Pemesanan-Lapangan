@@ -51,7 +51,7 @@
         <td><?= $row["Minggu"]; ?></td>
         <td>
             <!-- membuat agar berpidah ke file ubah.php -->
-            <a href="ubah.php?Jam=<?= $row["Jam"]; ?>">Ubah</a> 
+            <a href="ubah.php">Ubah</a> 
             <a href="">Hapus</a>
         </td>
     </tr>

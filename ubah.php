@@ -1,15 +1,11 @@
 <?php
-require 'insert.php';
-require 'select.php';
+//menambahkan isi file insert.php
+require 'update.php';
 
-//mengambil data dari url
-$Jam = $_GET["Jam"];
-
-//query data pemesanan_lapangan berdasarkan jam pada index ke 0
-$pesen = query("SELECT * FROM pemesanan_lapangan WHERE Jam = '$Jam'")[0];
-
+// cek apakah sudah di submit apa blom
 if (isset($_POST["submit"])) {
-    if (ubah($_POST) > 0) {
+    //beri alert apabila sudah di submit
+    if (tambah($_POST) > 0) {
            echo"<script>
                 alert('data berhasil diubah!!');
                 document.location.href = 'pemesanan.php';
@@ -27,14 +23,14 @@ if (isset($_POST["submit"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>update data</title>
+    <title>Ubah data</title>
 </head>
 <body>
     <form action="" method="post">
         <ul>
             <li>
                 <label for="nama">Nama Pemesan :</label>
-                <input type="text" name="nama" id="nama" required value="<?= $pesen["nama"] ?>">
+                <input type="text" name="nama" id="nama" required>
             </li>
             <li>
                 <label for="hari">Hari :</label>
@@ -50,7 +46,7 @@ if (isset($_POST["submit"])) {
             </li>
             <li>
                 <label for="jam">Jam :</label>
-                <select name="jam" id="jam" required>
+                <select name="jam" id="jam" required        >
                     <option value="01-02">Jam 01.00 Sampai Jam 02.00</option>
                     <option value="02-03">Jam 02.00 Sampai Jam 03.00</option>
                     <option value="03-04">Jam 03.00 Sampai Jam 04.00</option>
