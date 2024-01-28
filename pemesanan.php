@@ -1,6 +1,6 @@
 <?php
-    // Menghubungakan file index.php ke insert.php
-     require 'insert.php';
+    // Menghubungakan file index.php ke select.php
+     require 'select.php';
 
     $pemesanan = query("SELECT * FROM pemesanan_lapangan");
 
@@ -20,7 +20,7 @@
     <a href="about.php">About</a>
 </nav>
 <img src="galeri/foto 2.png" alt="">
-<h3>Harga /jam </h3>
+<h3>Harga Rp 50.000/jam </h3>
 
 
 
@@ -41,7 +41,6 @@
         
         <?php foreach( $pemesanan as $row ) : ?>
     <tr>
-        </td>
         <td><?= $row["Jam"]; ?></td>
         <td><?= $row["Senin"]; ?></td>
         <td><?= $row["Selasa"]; ?></td>
@@ -51,13 +50,15 @@
         <td><?= $row["Sabtu"]; ?></td>
         <td><?= $row["Minggu"]; ?></td>
         <td>
-            <a href="">Ubah</a>
+            <!-- membuat agar berpidah ke file ubah.php -->
+            <a href="ubah.php">Ubah</a> 
             <a href="">Hapus</a>
+        </td>
     </tr>
     <?php endforeach; ?>
 
     </table>
-
-
+    <a href="tambah.php">Menambahkan data</a>
+    
 </body>
 </html>

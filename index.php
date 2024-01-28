@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aplikasi Pemesanan Lapangan</title>
     <style>
-        background-image: url(/image/background.jpeg);
     </style>
   </head>
   <body>
