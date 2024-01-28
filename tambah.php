@@ -8,12 +8,12 @@ if (isset($_POST["submit"])) {
     if (tambah($_POST) > 0) {
            echo"<script>
                 alert('data berhasil ditambahkan!!');
-                document.location.href = 'pemesanan.php';
+                document.location.href = 'admin.php';
             </script>";
     }else {
             "<script>
                 alert('data gagal ditambahkan!!');
-                document.location.href = 'pemesanan.php';
+                document.location.href = 'admin.php';
             </script>";
     }
 }

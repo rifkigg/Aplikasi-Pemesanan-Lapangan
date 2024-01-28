@@ -1,7 +1,24 @@
 <?php
     // Menghubungakan file index.php ke select.php
      require 'select.php';
-
+     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Mengambil nilai dari input 'nama'
+        $nama = $_POST['nama'];
+        $password = $_POST['password'];
+        if ($nama == 'Admin' && $password == 'Rahasia') {
+            echo"<script>
+                    alert('Login Berhasil');
+                    document.location.href = 'admin.php';
+                </script>";
+            
+        }else {
+            echo"<script>
+                    alert('Login Gagal');
+                    document.location.href = 'index.php';
+                </script>";
+        }
+        
+    }
     $pemesanan = query("SELECT * FROM pemesanan_lapangan");
 
 ?>
@@ -18,13 +35,10 @@
     <a href="index.php">Home</a>
     <a href="pemesanan.php">Pemesanan</a>
     <a href="about.php">About</a>
-    <a href="login.php">Login</a>
+    <a href="pemesanan.php">Log Out</a>
 </nav>
-<img src="galeri/foto 2.png" alt="">
-<h3>Harga Rp 50.000/jam </h3>
 
-
-
+<h1>Selamat Datang Admin Tercintahhh</h1>
 <h1>Table Pemesanan Lapangan</h1>
     <table border="1" cellpadding="10" cellspacing="0">
    
@@ -53,6 +67,10 @@
             <?php endforeach; ?>
             
         </table>
+        <!-- membuat agar berpidah ke file ubah.php -->
+        <a href="tambah.php">Menambahkan data</a>
+        <a href="hapus.php">Hapus</a>
+        <a href="ubah.php">Ubah</a> 
     
 </body>
 </html>
