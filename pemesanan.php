@@ -36,7 +36,6 @@
         <th>Jumat</th>
         <th>Sabtu</th>
         <th>Minggu</th>
-        <th>Aksi</th>
     </tr>
         
         <?php foreach( $pemesanan as $row ) : ?>
@@ -49,16 +48,14 @@
         <td><?= $row["Jumat"]; ?></td>
         <td><?= $row["Sabtu"]; ?></td>
         <td><?= $row["Minggu"]; ?></td>
-        <td>
-            <!-- membuat agar berpidah ke file ubah.php -->
-            <a href="ubah.php">Ubah</a> 
-            <a href="">Hapus</a>
-        </td>
     </tr>
-    <?php endforeach; ?>
-
-    </table>
-    <a href="tambah.php">Menambahkan data</a>
+            <?php endforeach; ?>
+            
+        </table>
+        <!-- membuat agar berpidah ke file ubah.php -->
+        <a href="tambah.php">Menambahkan data</a>
+        <a href="hapus.php">Hapus</a>
+        <a href="ubah.php">Ubah</a> 
     
 </body>
 </html>
