@@ -25,7 +25,7 @@
             padding: 15px;
             background-color: #364F6B;
             color: #F5F5F5;
-            position: fixed;
+            position: sticky;
         }
         nav h1 {
             font-family: 'Asul', serif;
@@ -53,16 +53,17 @@
           font-size:24px;
           font-family: 'Poppins', sans-serif;
         }
+
     </style>
   </head>
   <body>
   <nav>
     <h1>Saka Sport</h1>
     <div class="link">
-    <a href="index.php">Home</a>
+    <a href="index.php">Beranda</a>
     <a href="pemesanan.php">Pemesanan</a>
-    <a href="about.php">About</a>
-    <a href="login.php">Login</a>
+    <a href="about.php">Tentang</a>
+    <a href="login.php">Masuk</a>
     </div>
   </nav>
   <section>
